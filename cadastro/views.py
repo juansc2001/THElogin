@@ -4,3 +4,6 @@ from django.shortcuts import render
 
 def teste(request):
     return render(request, 'teste.html')
+
+def cadastro(request):
+    return render(request, 'cadastro.html')

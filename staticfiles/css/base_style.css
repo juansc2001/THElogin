@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 375px;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #333;
+    border-radius: 10px;
+    background: #111;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #666;
+    background: #1a1a1a;
+}
+
+.signin-btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.signin-btn:hover {
+    background: #d9d9d9;
+}
+
+.forgot-password {
+    margin-top: 18px;
+    text-align: center;
+}
+
+.forgot-password a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #fff;
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+    .login-container {
+    max-width: 450px;
+    }
+
+    .login-title {
+    font-size: 2.5rem;
+    }
+
+    .input-group input,
+    .signin-btn {
+    padding: 18px;
+    font-size: 1.05rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .login-container {
+    max-width: 500px;
+    }
+
+    .login-title {
+    font-size: 3rem;
+    }
+
+    .input-group input,
+    .signin-btn {
+    font-size: 1.1rem;
+    }
+}
