@@ -16,6 +16,7 @@ body {
     padding: 20px;
 }
 
+
 .login-container {
     width: 100%;
     max-width: 375px;
@@ -25,6 +26,7 @@ body {
     justify-content: center;
 }
 
+/*
 .login-title {
     font-size: 2rem;
     font-weight: bold;
@@ -87,8 +89,10 @@ body {
 .forgot-password a:hover {
     color: #fff;
 }
+*/
 
 /* Tablets */
+/*
 @media (min-width: 768px) {
     .login-container {
     max-width: 450px;
@@ -104,8 +108,10 @@ body {
     font-size: 1.05rem;
     }
 }
+*/
 
 /* Desktop */
+/*
 @media (min-width: 1024px) {
     .login-container {
     max-width: 500px;
@@ -120,3 +126,4 @@ body {
     font-size: 1.1rem;
     }
 }
+*/

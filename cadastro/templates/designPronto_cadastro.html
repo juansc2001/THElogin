@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .register-container {
+      width: 100%;
+      max-width: 375px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .register-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 35px;
+      letter-spacing: 1px;
+    }
+
+    .input-group {
+      margin-bottom: 18px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      background: #111;
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #666;
+      background: #1a1a1a;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #fff;
+      color: #000;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .register-btn:hover {
+      background: #d9d9d9;
+    }
+
+    .login-link {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .login-link a {
+      color: #888;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .login-link a:hover {
+      color: #fff;
+    }
+
+    @media (min-width: 768px) {
+      .register-container {
+        max-width: 450px;
+      }
+
+      .register-title {
+        font-size: 2.5rem;
+      }
+
+      .input-group input,
+      .register-btn {
+        padding: 18px;
+        font-size: 1.05rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .register-container {
+        max-width: 500px;
+      }
+
+      .register-title {
+        font-size: 3rem;
+      }
+
+      .input-group input,
+      .register-btn {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="register-container">
+
+    <h1 class="register-title">Create Account</h1>
+
+    <div class="input-group">
+      <input type="text" placeholder="Username">
+    </div>
+
+    <div class="input-group">
+      <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-group">
+      <input type="password" placeholder="Password">
+    </div>
+
+    <div class="input-group">
+      <input type="password" placeholder="Confirm Password">
+    </div>
+
+    <button class="register-btn">Create Account</button>
+
+    <div class="login-link">
+      <a href="#">Already have an account? Sign In</a>
+    </div>
+
+  </div>
+
+</body>
+</html>

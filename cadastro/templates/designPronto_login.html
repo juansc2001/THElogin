@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Login</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 375px;
+      background: #000;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .login-title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #333;
+      border-radius: 10px;
+      background: #111;
+      color: #fff;
+      font-size: 1rem;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #666;
+      background: #1a1a1a;
+    }
+
+    .signin-btn {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      background: #fff;
+      color: #000;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .signin-btn:hover {
+      background: #d9d9d9;
+    }
+
+    .forgot-password {
+      margin-top: 18px;
+      text-align: center;
+    }
+
+    .forgot-password a {
+      color: #888;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: 0.3s;
+    }
+
+    .forgot-password a:hover {
+      color: #fff;
+    }
+
+      
+  .google-btn {
+      width: 100%;
+      margin-top: 8px;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      border: 1px solid #e5e5e5;
+      border-radius: 999px;
+      background: linear-gradient(
+          180deg,
+          #ffffff 0%,
+          #f7f7f7 100%
+      );
+      color: #111;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .25s ease;
+      box-shadow:
+          0 10px 30px rgba(255,255,255,0.08),
+          inset 0 1px 0 rgba(255,255,255,0.8);
+  }
+  .google-btn img {
+      width: 26px;
+      height: 26px;
+  }
+  .google-btn:hover {
+      transform: translateY(-3px);
+      box-shadow:
+          0 15px 40px rgba(255,255,255,0.12),
+          inset 0 1px 0 rgba(255,255,255,0.9);
+  }
+
+    /* Tablets */
+    @media (min-width: 768px) {
+      .login-container {
+        max-width: 450px;
+      }
+
+      .login-title {
+        font-size: 2.5rem;
+      }
+
+      .input-group input,
+      .signin-btn {
+        padding: 18px;
+        font-size: 1.05rem;
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 1024px) {
+      .login-container {
+        max-width: 500px;
+      }
+
+      .login-title {
+        font-size: 3rem;
+      }
+
+      .input-group input,
+      .signin-btn {
+        font-size: 1.1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-container">
+
+    <h1 class="login-title">Secure Login</h1>
+
+    <div class="input-group">
+      <input type="text" placeholder="Username" />
+    </div>
+
+    <div class="input-group">
+      <input type="password" placeholder="Password" />
+    </div>
+
+    <button class="signin-btn">Sign In</button>
+
+    <div class="forgot-password">
+      <a href="#">Forgot password?</a>
+    </div>
+
+    <a href="#" class="google-btn" style="">
+      <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google">
+      <span>Entrar com Google</span>
+    </a>
+
+  </div>
+
+</body>
+</html>

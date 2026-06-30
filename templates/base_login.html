@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{% block title %}Secure Login {% endblock %}</title>
   <link rel="stylesheet" href="{% static 'css/base_style.css' %}">
+  {% block head %} {% endblock %}
 </head>
 
 <body>
@@ -15,21 +16,7 @@
   <div class="login-container">
 
     {% block content %}
-    <h1 class="login-title">Secure Login</h1>
-
-    <div class="input-group">
-      <input type="text" placeholder="Username" />
-    </div>
-
-    <div class="input-group">
-      <input type="password" placeholder="Password" />
-    </div>
-
-    <button class="signin-btn">Sign In</button>
-
-    <div class="forgot-password">
-      <a href="#">Forgot password?</a>
-    </div>
+    
     {% endblock %}
 
   </div>
